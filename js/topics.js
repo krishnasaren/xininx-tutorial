@@ -1,7 +1,7 @@
 // ===========================
 // AMSTIG - Topics Data
 // ===========================
-import Topics from '../data/_MainTopicsHandler.js';
+import Topics from '../data/MainTopicsHandler.js';
 
 const TOPICS = Topics;
 

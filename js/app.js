@@ -903,7 +903,7 @@ let homeStatsCache = null;
 
 async function getHomeStats() {
   if (homeStatsCache) return homeStatsCache;
-  homeStatsCache = await loadStats("api/homest.php");
+  homeStatsCache = await loadStats("api/homestt_aa.php");
   return homeStatsCache;
 }
 
@@ -917,7 +917,7 @@ async function getHomeStats() {
     const main = $('main-content');
     if (!main) return;
 
-    const stats = await getHomeStats("api/homest.php") || {
+    const stats = await getHomeStats("api/homestt_aa.php") || {
     learners: "12K+",
     lessons: "80",
     code: "1210",
@@ -1034,7 +1034,7 @@ async function getHomeStats() {
   async function renderLesson(topicId, subtopicId) {
     const main = $('main-content');
     if (!main) return;
-    const stats = await loadStats("api/statictics.php") || {
+    const stats = await loadStats("api/statictics_ad.php") || {
     readTime: "~12 min read",
     level: "Intermediate",
     readers: "110k+ learners"
